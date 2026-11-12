@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorsportok</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #c41e3a;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .sport-card {
+            background-color: #2a2a2a;
+            border-left: 5px solid #c41e3a;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .sport-card img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .sport-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .sport-info h2 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .sport-info h2 a:hover {
+            color: #ff4d4d;
+            text-decoration: underline;
+        }
+
+        .sport-info p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        footer h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        /* Mobilon képek a szöveg felett jelennek meg */
+        @media (max-width: 650px) {
+            .sport-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .sport-card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>🏁 Motorsportok 🏁</h1>
+            <p>Üdvözöllek a Motorsport világában! Válassz a három motorsport közül:</p>
+        </header>
+
+        <main>
+            <!-- F1 -->
+            <div class="sport-card">
+                <img src="f1-formula-1-logo-review-critique.jpg" alt="Forma-1">
+                <div class="sport-info">
+                    <h2>🏎️ <a href="f1.html">F1 (Formula–1)</a></h2>
+                    <p>
+                        A Formula–1 a legrangosabb nemzetközi autóverseny-sorozat, melynek szabályait a Nemzetközi Automobil Szövetség (FIA) határozza meg. A világbajnokságban nyitott karosszériájú, együléses versenyautók vehetnek részt.
+                    </p>
+                </div>
+            </div>
+
+            <!-- MotoGP -->
+            <div class="sport-card">
+                <img src="motogp-premium-logo-vector-template-260nw-2345136375.webp" alt="MotoGP">
+                <div class="sport-info">
+                    <h2>🏍️ <a href="motogp.html">MotoGP</a></h2>
+                    <p>
+                        A Gyorsaságimotoros-világbajnokság, ismertebb nevén MotoGP a motorkerékpársport legmagasabb osztálya, szabályait az FIM határozza meg. 1949 óta minden évben megrendezik. Három kategóriája van: Moto3, Moto2 és MotoGP.
+                    </p>
+                </div>
+            </div>
+
+            <!-- NASCAR -->
+            <div class="sport-card">
+                <img src="images.jpg" alt="NASCAR">
+                <div class="sport-info">
+                    <h2>🚗 <a href="nascar.html">NASCAR</a></h2>
+                    <p>
+                        A NASCAR (National Association for Stock Car Auto Racing) az Amerikai Egyesült Államok legnagyobb autóverseny-sorozatokat működtető szervezete, amely széria (gyári) autók versenyzésére épül.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>🏁 Melyik motorsport tetszik a legjobban?</h3>
+        </footer>
+
+    </div>
+
+</body>
+</html>
